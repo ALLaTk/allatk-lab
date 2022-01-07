@@ -18,6 +18,9 @@ html {
 .header {
   display: flex;
   justify-content: space-between;
+  background: url('assets/jpg/mainfoto.jpg');
+  background-repeat: no-repeat;
+  background-position: center 22px;
   width: 1440px;
   height: 90px;
   padding-left: 0px;
@@ -25,11 +28,20 @@ html {
 }
 
 .logo {
+  background-size: contain;
+  background-repeat: no-repeat;  
+  transition: 0.3s;
   width: 50px;
   height: 50px;
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
 }
 
 
@@ -89,4 +101,61 @@ html {
   font-weight: bold;
   font-size: 20px;
   line-height: 50px;
+}
+
+.hero-section {
+  background-image: url('assets/jpg/mainfoto.jpg');
+  background-position: center -68px;
+  background-repeat: no-repeat;
+  padding-top: 160px;
+  padding-left: 80px;
+  padding-right: 860px;
+  padding-bottom: 352px;
+  height: 330px;
+  width: 500px;
+  border-radius: 0px;
+}
+
+.hero-title {
+  margin: 0px;
+  font-family: Merriweather;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.hero-text {
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  height: 120px;
+  width: 470px;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.btn-hero {
+  height: 55px;
+  width: 220px;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  padding-left: 0px;
+  padding-top: 0px;
+  border-radius: 0px;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  background: #BDAE82;;
 }

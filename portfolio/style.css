@@ -1,5 +1,92 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
 .container {
+  background-color: black;
+  color: white;
   width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 1440px;
+  height: 90px;
+  padding-left: 0px;
+  padding-top: 0px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 780px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 0px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  width: 470px;
+  margin: 0px;
+  list-style: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+
+.nav-link {
+  padding: 0 15px;
+  line-height: 50px;
+  text-decoration: none;
+  color: white;
+  transition: .3s;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px; 
+  /* padding-left: 0px; */
+}
+
+.switch-lng {
+  height: 51px;
+  width: 70px;
+  border-radius: 0px;
+  margin-right: 20px;
+  margin-bottom: 19px;
+  text-align: center;
+}
+
+.lng-text{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
 }

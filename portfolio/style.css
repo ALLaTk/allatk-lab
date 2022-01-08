@@ -177,13 +177,15 @@ html {
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 0em;
-  padding-left: 73px;
-  padding-right: 72px;
-  padding-top: 8px;
+  padding-left: 71px;
+  padding-right: 70px;
+  padding-top: 6px;
   padding-bottom: 7px;
   border-radius: 0px;
   text-align: center;
-  border: 0;
+  border: 2px solid #BDAE82;
+  
+
   cursor: pointer;
   background: #BDAE82;
 }
@@ -209,12 +211,12 @@ html {
   padding-top: 39px;
 }
 
-.hediang-title {
+.hediang-title-skills {
   padding-left: 274px;
   padding-right: 274px;
 }
 
-.section-title {
+.section-title-skills {
   position: absolute;
   z-index: 1;
   width: 152px;
@@ -308,5 +310,60 @@ html {
   line-height: 36px;
   text-align: center;
   margin: auto;
+}
+
+#portfolio {
+  width: 1400px;
+  height: 1145px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0px;
+}
+
+.section-title-portfolio {
+  position: absolute;
+  z-index: 1;
+  width: 217px;
+  background: #000;
+  height: 80px;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+  color: #BDAE82;
+  margin: 0px;
+}
+
+.hediang-title-portfolio {
+   padding-left: 220px;
+   padding-right: 248px;
+}
+
+.partfolio-btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  height: 55px;
+  width: 895px;
+  padding-left: 252px;
+  padding-right: 253px;
+  padding-top: 60px;
+}
+
+.black {
+  background-color: #000;
+  color: #BDAE82;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+  height: 1145px;
+  width: 1400px;
+  padding-top: 60px;
 }
 

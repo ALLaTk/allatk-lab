@@ -1,4 +1,10 @@
+
+
 body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: black;
   color: white;
 }
@@ -20,7 +26,7 @@ html {
   justify-content: space-between;
   background: url('assets/jpg/mainfoto.jpg');
   background-repeat: no-repeat;
-  background-position: center 22px;
+  background-position: center 0px;
   width: 1440px;
   height: 90px;
   padding-left: 0px;
@@ -44,30 +50,31 @@ html {
     contrast(87%);
 }
 
-
 .nav {
-  display: flex;
-  justify-content: space-between;
   margin-left: 780px;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-radius: 0px;
+  border: none;
 }
 
 .nav-list {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   height: 50px;
-  width: 470px;
+  width: 469px;
   margin: 0px;
   list-style: none;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 16px;
   
 }
 
-.nav-link {
+.nav-link-1,
+.nav-link-2,  
+.nav-link-3,
+.nav-link-4,
+.nav-link-5 {
   padding: 0 15px;
   line-height: 50px;
   text-decoration: none;
@@ -75,21 +82,40 @@ html {
   transition: .3s;
 }
 
+.nav-link-1 {
+  width: 49px;
+}
+
+.nav-link-2 {
+  width: 81px;
+}
+
+.nav-link-3 {
+  width: 55px;
+}
+
+.nav-link-4 {
+  width: 48px;
+}
+
+.nav-link-5 {
+  width: 86px;
+}
+
 .nav-item {
   display: flex;
   justify-content: space-between;
-  font-family: Inter;
+  font-family: "Inter";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 50px; 
-  /* padding-left: 0px; */
 }
 
 .switch-lng {
   height: 51px;
   width: 70px;
-  border-radius: 0px;
+  border: 0;
   margin-right: 20px;
   margin-bottom: 19px;
   text-align: center;
@@ -105,12 +131,12 @@ html {
 
 .hero-section {
   background-image: url('assets/jpg/mainfoto.jpg');
-  background-position: center -68px;
+  background-position: center -90px;
   background-repeat: no-repeat;
   padding-top: 160px;
   padding-left: 80px;
   padding-right: 860px;
-  padding-bottom: 352px;
+  padding-bottom: 330px;
   height: 330px;
   width: 500px;
   border-radius: 0px;
@@ -151,11 +177,136 @@ html {
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 0em;
-  padding-left: 0px;
-  padding-top: 0px;
+  padding-left: 73px;
+  padding-right: 72px;
+  padding-top: 8px;
+  padding-bottom: 7px;
   border-radius: 0px;
   text-align: center;
   border: 0;
   cursor: pointer;
-  background: #BDAE82;;
+  background: #BDAE82;
 }
+
+#skills {
+  width: 1440px;
+  height: 482px;
+  margin: 0px;
+}
+
+.section-heading {
+  position: relative;
+  width: 700px;
+  height: 80px;
+  padding-left: 370px;
+  padding-right: 370px;
+  padding-top: 100px;
+}
+
+.hediang-img {
+  position: absolute;
+  z-index: 0;
+  padding-top: 39px;
+}
+
+.hediang-title {
+  padding-left: 274px;
+  padding-right: 274px;
+}
+
+.section-title {
+  position: absolute;
+  z-index: 1;
+  width: 152px;
+  background: #000;
+  height: 80px;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+  color: #BDAE82;
+  margin: 0px;
+}
+
+.skills-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1400px;
+  height: 242px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 60px;
+}
+
+.skills-item {
+  width: 320px;
+  height: 240px;
+}
+
+.camera {
+  padding-left: 129px;
+  padding-right: 129px;
+  padding-bottom: 47.5px;
+}
+
+.video {
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-bottom: 47.5px;
+}
+
+.image {
+  padding-left: 127px;
+  padding-right: 127px;
+  padding-bottom: 47.5px;
+}
+
+.microfon {
+  padding-left: 144px;
+  padding-right: 144px;
+  padding-bottom: 47.5px;
+}
+
+.skill-name {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
+  height: 40px;
+  padding-bottom: 20px;
+}
+
+.name-title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  margin: auto;
+}
+
+.skill-description {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
+  height: 72px;
+  padding-bottom: 8px;
+
+}
+.item-description {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  margin: auto;
+}
+

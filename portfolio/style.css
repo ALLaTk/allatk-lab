@@ -1,5 +1,4 @@
 
-
 body {
   box-sizing: border-box;
   display: flex;
@@ -7,6 +6,7 @@ body {
   justify-content: space-between;
   background-color: black;
   color: white;
+  
 }
 
 html {
@@ -14,11 +14,12 @@ html {
 }
 
 .container {
+ 
   background-color: black;
   color: white;
   width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0px 20px;
 }
 
 .header {
@@ -34,25 +35,33 @@ html {
 }
 
 .logo {
-  background-size: contain;
-  background-repeat: no-repeat;  
-  transition: 0.3s;
-  width: 50px;
-  height: 50px;
-  padding-left: 20px;
+  width: 51px;
+  height: 51px;
+  padding-left: 13px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.logo-btn {
+  background-size: contain;
+  background-repeat: no-repeat;  
+  background-color: transparent;
+  border: none;
+  width: 51px;
+  height: 51px;
   cursor: pointer;
 }
 
-.logo:hover {
+
+.logo-btn:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
+  transition: 0.4s;
 }
 
 .nav {
-  margin-left: 780px;
-  margin-top: 20px;
+  margin-left: 784px;
+  margin-top: 23px;
   margin-bottom: 20px;
   border: none;
 }
@@ -133,7 +142,7 @@ html {
   background-image: url('assets/jpg/mainfoto.jpg');
   background-position: center -90px;
   background-repeat: no-repeat;
-  padding-top: 160px;
+  padding-top: 163px;
   padding-left: 80px;
   padding-right: 860px;
   padding-bottom: 330px;
@@ -184,8 +193,6 @@ html {
   border-radius: 0px;
   text-align: center;
   border: 2px solid #BDAE82;
-  
-
   cursor: pointer;
   background: #BDAE82;
 }
@@ -302,6 +309,7 @@ html {
   padding-bottom: 8px;
 
 }
+
 .item-description {
   font-family: Inter;
   font-style: normal;
@@ -314,7 +322,7 @@ html {
 
 #portfolio {
   width: 1400px;
-  height: 1145px;
+  height: 1500px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0px;
@@ -367,3 +375,42 @@ html {
   padding-top: 60px;
 }
 
+#video {
+  height: 945px;
+  width: 1440px;
+  margin: auto;
+ 
+}
+
+.videofon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('assets/jpg/video-player.jpg');
+  background-repeat: no-repeat;
+  background-position: center 60px;
+  width: 1400px;
+  height: 705px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 60px;
+}
+
+.player {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.player:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  transition: 0.4s;
+}
+
+#price {
+  width: 1440px;
+  height: 845px;
+}

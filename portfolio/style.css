@@ -152,9 +152,9 @@ html {
   height: 50px;
   font-family: Inter;
   font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
 }
 
 .lng-text-ru {
@@ -395,8 +395,8 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
 }
 
 .hediang-title-portfolio {
-   padding-left: 220px;
-   padding-right: 248px;
+  padding-left: 220px;
+  padding-right: 248px;
 }
 
 .partfolio-btn {
@@ -479,7 +479,6 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
 }
 
 .price-item {
-  
   height: 505px;
   width: 447px;
   border: 3px solid #BDAE82;
@@ -497,8 +496,8 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
 }
 
 .price-name {
-   margin: 0px;
-   font-family: "Merriweather";
+  margin: 0px;
+  font-family: "Merriweather";
   font-style: normal;
   font-weight: bold;
   font-weight: 700;
@@ -512,17 +511,19 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
   padding-left: 191px;
   padding-right: 190px;
   padding-top: 20px;
- font-family: Merriweather;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 48px;
-text-align: center;
-color: #BDAE82;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+  color: #BDAE82;
 }
+
 p {
   margin: 0px;
 }
+
 .price-text{
   display: flex;
   justify-content: space-between;
@@ -532,22 +533,21 @@ p {
   height: 180px;
   padding-left: 43.33px;
   padding-right: 42.67px;
- 
   padding-top: 20px;
   font-family: Inter;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 36px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
   font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 36px;
-letter-spacing: 0em;
-text-align: center;
-
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
 }
+
 .btn-prices{
   padding-left: 115px;
   padding-top: 40px;
@@ -593,7 +593,6 @@ button:hover {
   padding-right: 20px;
   padding-top: 60px;
   padding-bottom: 40px;
-  
 }
 
 .section-title-contacts {
@@ -608,9 +607,7 @@ button:hover {
   margin: 0px;
 }
 
-
-
-.input-email {
+.input {
   height: 50px;
   width: 450px;
   border: 2px solid #BDAE82;
@@ -621,7 +618,6 @@ button:hover {
   margin-bottom: 20px;
   background-color: transparent;
   padding-left: 18px;
-  /* padding-top: 4px; */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -690,4 +686,100 @@ button:hover {
   border: 2px solid #BDAE82;
   cursor: pointer;
   background: #BDAE82;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1440px;
+  height: 150px;
+}
+
+.copirite{
+  display: flex;
+  justify-content: space-between;
+  width: 182px;
+  height: 50px;
+  padding-left: 20px;
+  padding-top: 50px;
+ 
+}
+
+.fot {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+
+.fot-link {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+  padding-right: 13px;
+}
+
+.shcool {
+ width: 211px;
+ height: 50px;
+ padding-left: 410px;
+ padding-top: 50px;
+ padding-bottom: 50px;
+}
+
+.school-link{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 188px;
+  height: 50px;
+  padding-left: 404px;
+  padding-right: 20px;
+  padding-top: 50px;
+}
+
+.social-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 469px;
+  margin: 0px;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.social-link:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  transition: 0.4s;
+}
+
+.fot-link:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  transition: 0.4s;
+}
+
+.school-link:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  transition: 0.4s;
 }

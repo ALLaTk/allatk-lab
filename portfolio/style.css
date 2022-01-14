@@ -6,7 +6,7 @@ body {
   justify-content: space-between;
   background-color: black;
   color: white;
-  
+  margin: 0px;
 }
 
 html {
@@ -590,7 +590,7 @@ p {
 }
 
 .btn-prices{
-  padding-left: 110px;
+  padding-left: 112px;
   padding-top: 38px;
 }
 

@@ -851,7 +851,7 @@ button:hover {
   padding-left: 4px;
   margin: 0px;
   flex-direction: column;
-  width: 620px;
+  width: 587px;
   height: 100%;
   background-color: black;
   margin-left: 88px;
@@ -863,7 +863,7 @@ button:hover {
 
 .nav.open{
   transform: translateX(0%);
-  z-index: 1;
+  z-index: 2;
   right: 0px;
   transition: 1s;
 }
@@ -872,9 +872,9 @@ button:hover {
   flex-direction: column;
   width: 150px;
   height: 429px;
-  padding-left: 124px;
+  padding-left: 123px;
   padding-right: 0px;
-  padding-top: 144px;
+  padding-top: 147px;
 }
 
 .nav-link-1,
@@ -961,14 +961,14 @@ button:hover {
 }
 
 .hamburger.open:hover {
-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+  filter: invert(26%) sepia(15%) saturate(638%)  hue-rotate(7deg) brightness(92%)
     contrast(87%);
   transition: 0.4s;
   cursor: pointer;
 }
 
 .hero-section {
-  height: 500px;
+  height: 420px;
   width: 390px;
   background-image: url('assets/jpg/hero.jpg');
   background-position: center -90px;
@@ -993,7 +993,7 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
 .hero-text {
   margin: 0px;
   padding-top: 20px;
-  padding-bottom: 60px;
+  padding-bottom: 59px;
   height: 72px;
   width: 390px;
   font-family: Inter;
@@ -1003,11 +1003,110 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  }
+}
+  
+.section-heading {
+  width: 364px;
+  height: 80px;
+  padding-top: 103px;
+  padding-left: 202px;
+  padding-right: 202px;
+  align-items: center;
 }
 
-/* @media (max-width: 768px) {
-  .skillss {
-    justify-content: space-around;
-  }
-} */
+
+.section-title-skills{
+  width: 131px;
+  font-family: Merriweather;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.hediang-title-skills{
+  padding-left: 116px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.hediang-img{
+  width: 362px;
+  padding-top: 17px;
+}
+
+.skills-items {
+  display: flex;
+  justify-content: space-around;
+  width: 718px;
+  height: 520px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 23px;
+}
+
+.skills-item {
+  width: 300px;
+  height: 224px;
+}
+
+.skill-name{
+  width: 280px;
+  height: 40px;
+  padding: 0px 10px 20px 20px;
+}
+
+.skill-description{
+  height: 44px;
+  padding-right: 0px;
+  padding-left: 20px;
+}
+
+.item-description {
+  height: 44px;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+#image{
+  padding-left: 8px;
+}
+
+.image {
+   padding-bottom: 28px;
+}
+
+#microfon{
+   padding-right: 22px;
+}
+
+.microfon{
+   padding-bottom: 28px;
+}
+
+#camera{
+  padding-left: 8px;
+}
+
+.camera {
+   padding-bottom: 28px;
+}
+
+#videoimg{
+   padding-right: 22px;
+}
+
+.video{
+   padding-bottom: 28px;
+}
+
+}
+

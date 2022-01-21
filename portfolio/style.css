@@ -842,6 +842,7 @@ button:hover {
   height: 91px;
   padding-left: 60px;
   padding-right: 64px;
+  background: url('assets/jpg/hero.jpg');
 }
 
 .nav {
@@ -856,8 +857,8 @@ button:hover {
   margin-left: 88px;
   margin-top: 0px;
   right: -625px;
-   transition: 1s;
-   overflow-x: hidden;
+  transition: 1s;
+  overflow-x: hidden;
 }  
 
 .nav.open{
@@ -965,4 +966,48 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
   transition: 0.4s;
   cursor: pointer;
 }
+
+.hero-section {
+  height: 500px;
+  width: 390px;
+  background-image: url('assets/jpg/hero.jpg');
+  background-position: center -90px;
+  background-repeat: no-repeat;
+  padding-top: 78px;
+  padding-left: 61px;
+  padding-right: 317px;
+  padding-bottom: 0px;
 }
+  
+.hero-title {
+  width: 165px;
+  font-family: 'Merriweather';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.hero-text {
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  height: 72px;
+  width: 390px;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  }
+}
+
+/* @media (max-width: 768px) {
+  .skillss {
+    justify-content: space-around;
+  }
+} */

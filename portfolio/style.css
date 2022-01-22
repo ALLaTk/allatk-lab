@@ -7,6 +7,7 @@ body {
   background-color: black;
   color: white;
   margin: 0px;
+  overflow-x: hidden;
 }
 
 html {
@@ -449,7 +450,7 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
   padding-right: 248px;
 }
 
-.partfolio-btn {
+.portfolio-btn {
   display: flex;
   justify-content: space-between;
   gap: 5px;
@@ -839,10 +840,11 @@ button:hover {
 @media(max-width: 768px){
 .header {
   width: 648px;
-  height: 91px;
+  height: 92px;
   padding-left: 60px;
   padding-right: 64px;
   background: url('assets/jpg/hero.jpg');
+  margin: 0px auto;
 }
 
 .nav {
@@ -851,12 +853,12 @@ button:hover {
   padding-left: 4px;
   margin: 0px;
   flex-direction: column;
-  width: 587px;
-  height: 100%;
+  width: 615px;
+  height: 2000px;
   background-color: black;
   margin-left: 88px;
   margin-top: 0px;
-  right: -625px;
+  right: -1500px;
   transition: 1s;
   overflow-x: hidden;
 }  
@@ -866,6 +868,8 @@ button:hover {
   z-index: 2;
   right: 0px;
   transition: 1s;
+  overflow-x: hidden;
+  
 }
 
 .nav-list {
@@ -875,6 +879,7 @@ button:hover {
   padding-left: 123px;
   padding-right: 0px;
   padding-top: 147px;
+  overflow-x: hidden;
 }
 
 .nav-link-1,
@@ -923,7 +928,7 @@ button:hover {
   height: 50px;
   padding-top: 21px;
   padding-right: 4px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hamburger:hover{
@@ -942,12 +947,14 @@ button:hover {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+ 
 }
 
 .hamburger.open .line1 {
   width: 61px;
   height: 2px;
   transform: rotate(-45deg) translate(-13px, 5px);;
+
 }
 
 .hamburger.open .line2 {
@@ -968,7 +975,7 @@ button:hover {
 }
 
 .hero-section {
-  height: 420px;
+  height: 421px;
   width: 390px;
   background-image: url('assets/jpg/hero.jpg');
   background-position: center -90px;
@@ -977,6 +984,7 @@ button:hover {
   padding-left: 61px;
   padding-right: 317px;
   padding-bottom: 0px;
+  margin: 0px auto;
 }
   
 .hero-title {
@@ -1004,11 +1012,15 @@ button:hover {
   letter-spacing: 0em;
   text-align: left;
 }
+
+#skills {
+  height: 729px;
+}
   
 .section-heading {
   width: 364px;
   height: 80px;
-  padding-top: 103px;
+  padding-top: 101px;
   padding-left: 202px;
   padding-right: 202px;
   align-items: center;
@@ -1043,9 +1055,9 @@ button:hover {
   justify-content: space-around;
   width: 718px;
   height: 520px;
-  padding-left: 20px;
+  padding-left: 21px;
   padding-right: 20px;
-  padding-top: 23px;
+  padding-top: 24px;
 }
 
 .skills-item {
@@ -1081,7 +1093,7 @@ button:hover {
 }
 
 .image {
-   padding-bottom: 28px;
+   padding-bottom: 27px;
 }
 
 #microfon{
@@ -1089,7 +1101,7 @@ button:hover {
 }
 
 .microfon{
-   padding-bottom: 28px;
+   padding-bottom: 27px;
 }
 
 #camera{
@@ -1097,7 +1109,7 @@ button:hover {
 }
 
 .camera {
-   padding-bottom: 28px;
+   padding-bottom: 27px;
 }
 
 #videoimg{
@@ -1105,7 +1117,68 @@ button:hover {
 }
 
 .video{
-   padding-bottom: 28px;
+   padding-bottom: 27px;
+}
+
+.section-heading-portfolio {
+  width: 364px;
+  height: 80px;
+  padding-top: 81 px;
+  padding-left: 202px;
+  padding-right: 202px;
+  align-items: center;
+}
+
+.hediang-title-portfolio {
+  padding-left: 90px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#portfolio {
+  height: 3870px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.section-title-portfolio{
+  width: 185px;
+  font-family: Merriweather;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+
+.hediang-img{
+  width: 363px;
+  padding-top: 19px;
+}
+
+.portfolio-btn{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  gap: 5px;
+  width: 445px;
+  height: 115px;
+  padding-left: 162px;
+  padding-top: 29px;
+}
+
+.gallery{
+  width: 450px; 
+  height: 3491px;
+  gap: 21px;
+  padding-left: 159px;
+}
+
+.gallery-photo{
+  height: 561px;
 }
 
 }

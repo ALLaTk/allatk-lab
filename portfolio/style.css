@@ -15,7 +15,6 @@ html {
 }
 
 .container {
- 
   background-color: black;
   color: white;
   max-width: 1440px;
@@ -664,10 +663,9 @@ button:hover {
   border: 2px solid #BDAE82;
   box-sizing: border-box;
   border-radius: 0px;
-  background-color: transparent;
   margin-left: 970px;
   margin-bottom: 20px;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
   padding-left: 18px;
   font-family: Inter;
   font-size: 20px;
@@ -700,7 +698,7 @@ button:hover {
   border: 2px solid #BDAE82;
   box-sizing: border-box;
   border-radius: 0px;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 450px;
   height: 100px;
   padding-left: 17px;
@@ -1200,6 +1198,10 @@ button:hover {
   height: 64.6px;
 }
 
+#price{
+height: 1905px;
+}
+
 .price-section{
   display: flex;
   flex-direction: column;
@@ -1239,6 +1241,42 @@ button:hover {
 
 .btn-price{
   height: 54px;
+}
+
+#contacts{
+  height: 600px;
+  width: 768px;
+   background: url('assets/jpg/contacts-adap.jpg');
+  background-size: auto 600px;
+  background-position: center center;
+}
+
+.contacts-title {
+  width: 450px;
+  height: 64px;
+  padding-left: 293px;
+  padding-top: 59px;
+  padding-bottom: 40px;
+}
+
+.section-title-contacts{
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 64px;
+}
+
+.input {
+  margin-left: 159px;
+}
+
+.text-message {
+  padding-left: 159px;
+  margin-left: 0px;
+}
+
+.send-message{
+  padding-left: 274px;
 }
 
 }

@@ -1047,7 +1047,7 @@ button:hover {
 
 .hediang-img{
   width: 362px;
-  padding-top: 17px;
+  padding-top: 16px;
 }
 
 .skills-items {
@@ -1153,16 +1153,9 @@ button:hover {
   text-align: center;
 }
 
-
-.hediang-img{
-  width: 363px;
-  padding-top: 19px;
-}
-
 .portfolio-btn{
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   gap: 5px;
   width: 445px;
   height: 115px;
@@ -1179,6 +1172,73 @@ button:hover {
 
 .gallery-photo{
   height: 561px;
+}
+
+#video {
+  height: 628px;
+}
+
+.videofon{
+  background: url('assets/jpg/video-player-adap.jpg');
+  background-repeat: no-repeat;
+  background-position: center 28px;
+  width: 768px;
+  height: 447px;
+  padding: 0px;
+}
+
+.player{
+  width: 75px;
+  height: 75px;
+  padding-top: 18px;
+  padding-right: 78px;
+
+}
+
+.player_img{
+  width: 64.6px;
+  height: 64.6px;
+}
+
+.price-section{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 420px;
+  height: 1615px;
+  padding-left: 174px;
+  padding-top: 28px;
+  padding-right: 0px;
+}
+
+.price-item{
+  width: 420px;
+  height: 505px;
+}
+
+.price-header{
+  padding-top: 41px;
+  padding-left: 142px;
+  padding-right: 0px;
+}
+
+.price-number{
+  padding-left: 164px;
+  padding-right: 0px;
+}
+
+.price-text{
+  padding-left: 25px;
+  padding-right: 0px;
+}
+
+.btn-prices{
+  padding-left: 97px; 
+  padding-top: 39px;
+}
+
+.btn-price{
+  height: 54px;
 }
 
 }

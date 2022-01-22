@@ -1279,5 +1279,30 @@ line-height: 64px;
   padding-left: 274px;
 }
 
+.footer{
+  display: flex;
+  flex-direction: column;
+  width: 768px;
+  height: 190px;
+}
+
+.copirite{
+  height: 32px;
+  padding-left: 297px;
+  padding-top: 16px;
+  padding-bottom: 0px;
+}
+
+.shcool{
+  padding-left: 279px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.social{
+  padding-left: 290px;
+  padding-top: 0px;
+  padding-bottom: 27px;
+}
 }
 

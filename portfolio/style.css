@@ -86,7 +86,6 @@ html {
   list-style: none;
   padding-left: 15px;
   padding-right: 16px;
-  
 }
 
 .nav-link-1,
@@ -184,9 +183,6 @@ html {
   font-weight: bold;
   font-size: 20px;
   line-height: 50px;
-  
-  /* padding-right: 9px;
-  padding-left: 0px; */
   cursor: pointer;
 }
 
@@ -230,6 +226,7 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
   font-size: 20px;
   line-height: 50px;
 }
+
 .burger {
   display: none;
 }
@@ -242,13 +239,11 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
 }
 
 .hero-section {
-  
   padding-top: 163px;
   padding-left: 80px;
-  
   padding-bottom: 330px;
   height: 330px;
-  width: 500px;
+  max-width: 500px;
   border-radius: 0px;
 }
 
@@ -266,8 +261,7 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
 .hero-text {
   margin: 0px;
   padding-top: 10px;
-  padding-bottom: 25px;
-  height: 120px;
+  padding-bottom: 21px;
   width: 470px;
   font-family: Inter;
   font-size: 20px;
@@ -342,7 +336,6 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1400px;
-  
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 60px;
@@ -405,7 +398,6 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
   width: 280px;
   height: 72px;
   padding-bottom: 8px;
-
 }
 
 .item-description {
@@ -430,7 +422,6 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
   width: 700px;
   height: 80px;
   margin: 0 auto 1px;
-  
   padding-top: 100px;
 }
 
@@ -460,7 +451,6 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
   justify-content: center;
   flex-wrap: wrap;
   gap: 5px;
-  
   padding-top: 60px;
 }
 
@@ -484,10 +474,8 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
 }
 
 #video {
- 
   max-width: 1440px;
   margin: auto;
- 
 }
 
 .videofon {
@@ -520,7 +508,6 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
 
 #price {
   max-width: 1440px;
-  
 }
 
 .price-section {
@@ -529,7 +516,6 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
   flex-wrap: wrap;
   gap: 24px;
   max-width: 1400px;
-  
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 58px;
@@ -762,7 +748,6 @@ button:hover {
   height: 50px;
   padding-left: 20px;
   padding-top: 50px;
- 
 }
 
 .fot {
@@ -789,7 +774,6 @@ button:hover {
 .shcool {
  width: 211px;
  height: 50px;
- 
  padding-top: 50px;
  padding-bottom: 50px;
 }
@@ -810,7 +794,6 @@ button:hover {
   justify-content: space-between;
   width: 188px;
   height: 50px;
-  
   padding-right: 20px;
   padding-top: 50px;
 }
@@ -851,12 +834,20 @@ button:hover {
  }
 }
 
+@media (max-width: 1244px) {
+ .price-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+}
+
 
 @media(max-width: 768px){
 .container {
-   width: 100%;
-   margin-left: auto;
- }
+  max-width: 768px;
+  margin-left: auto;
+}
 
 .header {
   display: flex;
@@ -866,6 +857,8 @@ button:hover {
   padding-left: 60px;
   padding-right: 60px;
   background: url('assets/jpg/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center 0px;
   margin: auto;
 }
 
@@ -895,9 +888,9 @@ button:hover {
   flex-direction: column;
   width: 150px;
   height: 429px;
-  padding-left: 123px;
+  padding-left: 126px;
   padding-right: 0px;
-  padding-top: 147px;
+  padding-top: 146px;
   overflow-x: hidden;
 }
 
@@ -932,7 +925,6 @@ button:hover {
 .switch-lng{
   padding-top: 20px;
   margin-left: auto;
-  /* padding-right: 17px; */
   width: 81px;
 }
 
@@ -977,7 +969,7 @@ button:hover {
   width: 61px;
   height: 2px;
   transform: rotate(-45deg) translate(-13px, 5px);;
-
+  position: fixed;
 }
 
 .hamburger.open .line2 {
@@ -987,7 +979,8 @@ button:hover {
 .hamburger.open .line3 {
   width: 61px;
   height: 2px;
-  transform: rotate(45deg) translate(-13px, -3px);;
+  transform: rotate(45deg) translate(-10px, -2px);
+  position: fixed;
 }
 
 .hamburger.open:hover {
@@ -1001,18 +994,19 @@ button:hover {
   background-image: url('assets/jpg/hero.jpg');
   background-position: center -90px;
   background-repeat: no-repeat;
-  width: 768px;
-  
+  max-width: 768px;
 }
 
 .hero-section {
+  display: flex;
+  flex-direction: column;
   height: 421px;
-  width: 390px;
+  max-width: 390px;
   padding-top: 76px;
   padding-left: 60px;
   padding-right: 317px;
   padding-bottom: 0px;
-  margin: 0px;
+  margin: auto 0px;
 }
   
 .hero-title {
@@ -1030,7 +1024,6 @@ button:hover {
   margin: 0px;
   padding-top: 20px;
   padding-bottom: 60px;
-  height: 72px;
   width: 390px;
   font-family: Inter;
   font-size: 20px;
@@ -1042,18 +1035,15 @@ button:hover {
 }
 
 #skills {
- 
   max-width: 768px;
 }
   
 .section-heading {
   width: 364px;
-  padding-top: 103px;
+  padding-top: 101px;
 }
 
-
 .section-title-skills{
- 
   width: 131px;
   font-family: Merriweather;
   font-size: 32px;
@@ -1061,7 +1051,6 @@ button:hover {
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0em;
-
 }
 
 .hediang-title-skills{
@@ -1076,7 +1065,7 @@ button:hover {
 .skills-items {
   display: flex;
   justify-content: space-around;
-  width: 718px;
+  max-width: 718px;
   height: 520px;
   padding-left: 20px;
   padding-right: 20px;
@@ -1147,8 +1136,6 @@ button:hover {
   width: 364px;
   height: 80px;
   padding-top: 105px;
-  padding-left: 202px;
-  padding-right: 202px;
   align-items: center;
 }
 
@@ -1160,9 +1147,9 @@ button:hover {
 }
 
 #portfolio {
-  height: 3870px;
   padding-left: 0px;
   padding-right: 0px;
+  max-width: 768px;
 }
 
 .section-title-portfolio{
@@ -1181,17 +1168,17 @@ button:hover {
   flex-wrap: wrap;
   gap: 5px;
   width: 445px;
-  height: 115px;
-  padding-left: 162px;
-  padding-top: 29px;
+  padding-top: 30px;
+  align-items: center;
+  margin: auto;
 }
 
 .gallery{
   width: 450px; 
-  height: 3491px;
-  gap: 21px;
-  padding-left: 159px;
-  padding-top: 59px;
+  gap: 25px;
+  align-items: center;
+  margin: auto;
+  padding-top: 62px;
 }
 
 .gallery-photo{
@@ -1200,13 +1187,14 @@ button:hover {
 
 #video {
   height: 628px;
+  max-width: 768px;
 }
 
 .videofon{
   background: url('assets/jpg/video-player-adap.jpg');
   background-repeat: no-repeat;
   background-position: center 28px;
-  width: 768px;
+  max-width: 768px;
   height: 448px;
   padding: 0px;
 }
@@ -1216,7 +1204,6 @@ button:hover {
   height: 75px;
   padding-top: 18px;
   padding-right: 78px;
-
 }
 
 .player_img{
@@ -1225,7 +1212,7 @@ button:hover {
 }
 
 #price{
-height: 1905px;
+  height: 1905px;
 }
 
 .price-section{
@@ -1234,9 +1221,9 @@ height: 1905px;
   gap: 50px;
   width: 420px;
   height: 1615px;
-  padding-left: 174px;
   padding-top: 28px;
-  padding-right: 0px;
+  align-items: center;
+  margin: auto;
 }
 
 .price-item{
@@ -1271,8 +1258,8 @@ height: 1905px;
 
 #contacts{
   height: 602px;
-  width: 768px;
-   background: url('assets/jpg/contacts-adap.jpg');
+  max-width: 768px;
+  background: url('assets/jpg/contacts-adap.jpg');
   background-size: auto 600px;
   background-position: center center;
 }
@@ -1286,10 +1273,10 @@ height: 1905px;
 }
 
 .section-title-contacts{
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: 64px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
 }
 
 .input {
@@ -1303,12 +1290,13 @@ line-height: 64px;
 
 .send-message{
   padding-left: 274px;
+  padding-top: 25px;
 }
 
 .footer{
   display: flex;
   flex-direction: column;
-  width: 768px;
+  max-width: 768px;
   height: 190px;
 }
 
@@ -1332,3 +1320,222 @@ line-height: 64px;
 }
 }
 
+@media (max-width: 767px) {
+.skills-items {
+  display: flex;
+  justify-content: center;
+  max-width: 718px;
+  padding-left: 0px;
+  height: auto;
+}
+
+#camera {
+  padding: 0px;
+}
+
+#videoimg{
+  padding: 0px;
+}
+
+#image{
+  padding: 0px;
+}
+
+#microfon{
+  padding: 0px;
+}
+
+#contacts {
+  max-width: 767px;
+}
+
+.contacts-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input{
+  margin-left: 0px;
+}
+
+.text-message{
+  padding-left: 0px;
+}
+
+.send-message{
+  padding-left: 0px;
+}
+
+.contacts-title{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.section-title-contacts{
+  text-align: center;
+}
+
+.copirite{
+  align-items: center;
+  margin: auto;
+  padding-left: 0px;
+  padding-top: 14px;
+  padding-bottom: 0px;
+}
+
+.shcool{
+  align-items: center;
+  margin: auto;
+  padding-left: 0px;
+}
+
+.social{
+  align-items: center;
+  margin: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+}
+
+@media (max-width: 590px){
+ .nav-list{
+   padding-left: 200px;
+ }
+}
+
+@media (max-width: 490px){
+.header{
+  padding-left: 40px;
+  padding-right: 40px;
+ } 
+
+ 
+.hero-section{
+  padding-left: 30px;
+}
+
+.hero-text {
+  margin: 0 0 60px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  max-width: 256px;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.section-heading {
+  width: 280px;
+}
+
+.hediang-img{
+  width: 280px;
+}
+
+.section-title-skills{
+  width: 102px;
+}
+
+.hediang-title-skills{
+  padding-left: 89px;
+}
+
+.hediang-title-portfolio{
+  padding-left: 61px;
+}
+
+.section-title-portfolio{
+  width: 163px;
+}
+
+.section-heading-portfolio{
+  width: 280px;
+}
+
+.portfolio-btn{
+  flex-direction: column;
+  max-width: 320px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.gallery{
+  width: 280px; 
+}
+
+.gallery-photo{
+  max-width: 280px;
+  height: 390px;
+  margin: 0 auto;
+}
+
+#img-gal{
+  width: 280px;
+  height: 390px;
+}
+
+#video{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.price-section{
+  max-width: 300px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.price-item{
+  width: 300px;
+}
+
+.price-header {
+  padding-left: 85px;
+}
+
+.price-number {
+  padding-left: 110px;
+}
+
+.price-text{
+  width: 260px;
+}
+
+.btn-prices {
+  padding-left: 44px;
+}
+
+.contacts-section{
+  width: 300px;
+}
+
+.contacts-title{
+  width: 300px;
+}
+
+.input{
+  width: 300px;
+}
+
+.text-message{
+  width: 300px;
+}
+
+.text-input{
+  width: 300px;
+}
+}
+
+@media (max-width: 470px) {
+.nav-list{
+  padding-left: 320px;
+}
+}

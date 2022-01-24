@@ -97,7 +97,7 @@ html {
   line-height: 50px;
   text-decoration: none;
   color: white;
-  transition: .3s;
+  transition: 0.5s;
   line-height: 50px;
   cursor: pointer;
 }
@@ -871,7 +871,7 @@ button:hover {
   background-color: black;
   margin-top: 0px;
   right: -620px;
-  transition: 1.5s;
+  transition: 1s;
   overflow-x: hidden;
 }  
 
@@ -889,7 +889,7 @@ button:hover {
   width: 150px;
   height: 429px;
   padding-left: 126px;
-  padding-right: 0px;
+  padding-right: 344px;
   padding-top: 146px;
   overflow-x: hidden;
 }
@@ -1403,6 +1403,7 @@ button:hover {
 @media (max-width: 590px){
  .nav-list{
    padding-left: 200px;
+   padding-right: 270px;
  }
 }
 
@@ -1537,5 +1538,6 @@ button:hover {
 @media (max-width: 470px) {
 .nav-list{
   padding-left: 320px;
+  padding-right: 150px;
 }
 }

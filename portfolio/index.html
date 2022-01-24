@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@400;700&family=Open+Sans&family=Roboto:wght@300;400&family=Work+Sans:wght@200;300;400&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/ico/fav-icon.ico">
@@ -20,9 +23,9 @@
         <div class="logo">
           <span class="logo-btn"><img src="assets/svg/logo.svg" alt="logotip"></span>
         </div>
-
+        
         <div class="nav">
-          <nav >
+          <nav >           
             <ul class="nav-list">
               <li class="nav-item"><a href="#skills" class="nav-link-1">Skills</a></li>
               <li class="nav-item"><a href="#portfolio" class="nav-link-2">Portfolio</a></li>
@@ -38,19 +41,26 @@
           <span class="lng-text-slash">/</span>
           <span class="lng-text-ru">ru</span>
         </div>
+      <div class="three col">
+        <div class="hamburger" id="hamburger-1">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+      </div>
       </div>
     </div>
   </header>
 
   <main class="main">
-    <div class="container">
+    <div class="container" id="hero">
       <section class="hero-section">
         <h1 class="hero-title">Alexa Rise</h1>
         <p class="hero-text">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
         <button class="btn-hero">Hire me</button>
       </section>
 
-      <section class="section" id="skills">
+     <section class="section" id="skills">
         <div class="section-heading">
           <div class="hediang-title-skills">
             <h2 class="section-title-skills">Skills</h2>
@@ -61,7 +71,7 @@
         </div>
 
         <div class="skills-items">
-          <div class="skills-item">
+          <div class="skills-item" id="camera">
             <img class="camera" src="assets/svg/camera.svg" alt="camera" width="62" height="50">
             <div class="skill-name">
               <p class="name-title">Digital photography</p>
@@ -71,7 +81,7 @@
             </div>
           </div>
 
-          <div class="skills-item">
+          <div class="skills-item" id="videoimg">
             <img class="video" src="assets/svg/video.svg" alt="video" width="60" height="50">
             <div class="skill-name">
               <p class="name-title">Video shooting</p>
@@ -81,7 +91,7 @@
             </div>
           </div>
 
-          <div class="skills-item">
+          <div class="skills-item" id="image">
             <img class="image" src="assets/svg/image.svg" alt="image" width="66" height="50">
             <div class="skill-name">
               <p class="name-title">Retouch</p>
@@ -91,7 +101,7 @@
             </div>
           </div>
 
-          <div class="skills-item">
+          <div class="skills-item" id="microfon">
             <img class="microfon" src="assets/svg/mic.svg" alt="microfon" width="32" height="50">
             <div class="skill-name">
               <p class="name-title">Audio</p>
@@ -112,7 +122,7 @@
             <img class="hediang-img" src="assets/svg/title-line.svg" alt="line" width="705" height="2">
           </div>
         </div>
-        <div class="partfolio-btn">
+        <div class="portfolio-btn">
           <button class="btn-hero black">Winter</button>
           <button class="btn-hero black">Spring</button>
           <button class="btn-hero black">Summer</button>
@@ -120,26 +130,27 @@
         </div>
         <div class="gallery">
           <div class="gallery-photo">
-            <img src="assets/jpg/portfolio-img-1.jpg" alt="gallery-photo" width="450" height="560">
+            <img id="img-gal" src="assets/jpg/portfolio-img-1.jpg" alt="gallery-photo" width="450" height="560">
           </div>
           <div class="gallery-photo">
-            <img src="assets/jpg/portfolio-img-2.jpg" alt="gallery-photo" width="450" height="560">
+            <img id="img-gal" src="assets/jpg/portfolio-img-2.jpg" alt="gallery-photo" width="450" height="560">
           </div>
           <div class="gallery-photo">
-            <img src="assets/jpg/portfolio-img-3.jpg" alt="gallery-photo" width="450" height="560">
+            <img id="img-gal" src="assets/jpg/portfolio-img-3.jpg" alt="gallery-photo" width="450" height="560">
           </div>
           <div class="gallery-photo">
-            <img src="assets/jpg/portfolio-img-4.jpg" alt="gallery-photo" width="450" height="558">
+            <img id="img-gal" src="assets/jpg/portfolio-img-4.jpg" alt="gallery-photo" width="450" height="558">
           </div>
           <div class="gallery-photo">
-            <img src="assets/jpg/portfolio-img-5.jpg" alt="gallery-photo" width="450" height="558">
+            <img id="img-gal" src="assets/jpg/portfolio-img-5.jpg" alt="gallery-photo" width="450" height="558">
           </div>
           <div class="gallery-photo">
-            <img src="assets/jpg/portfolio-img-6.jpg" alt="gallery-photo" width="450" height="558">
+            <img id="img-gal" src="assets/jpg/portfolio-img-6.jpg" alt="gallery-photo" width="450" height="558">
           </div>
         </div>
-      </section>
-      <section class="section" id="video">
+      </section> 
+
+       <section class="section" id="video">
         <div class="section-heading">
           <div class="hediang-title-skills">
             <h2 class="section-title-skills">Video</h2>
@@ -149,11 +160,11 @@
           </div>
         </div>  
         <div class="videofon">  
-            <button class="player"><img src="assets/svg/Play_hover-1.svg" alt="player" width="129" height="130"></button>
+            <button class="player"><img class="player_img" src="assets/svg/Play_hover-1.svg" alt="player" width="129" height="130"></button>
         </div> 
       </section>
 
-      <section class="section" id="price">
+       <section class="section" id="price">
         <div class="section-heading">
           <div class="hediang-title-skills">
             <h2 class="section-title-skills">Price</h2>
@@ -222,16 +233,18 @@
       </section>
 
       <section class="section" id="contacts">
-        <div class="contacts-title">
+        <div class="contacts-section">
+          <div class="contacts-title">
           <h2 class="section-title-contacts">Contact me</h2>
-        </div>
-        <input class="input"  type="email" placeholder="E-mail">
-        <input class="input" type="tel" placeholder="Phone">
-        <div class="text-message">
+          </div>
+          <input class="input"  type="email" placeholder="E-mail">
+          <input class="input" type="tel" placeholder="Phone">
+          <div class="text-message">
           <textarea class="text-input" name="message" id="mesage" cols="45" rows="10" placeholder="Message"></textarea>
-        </div>
-        <div class="send-message">
+          </div>
+          <div class="send-message">
           <button class="btn-message">Send message</button>
+          </div>
         </div>
       </section>
     </div>
@@ -258,7 +271,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> 
   
 
   <script src="index.js"></script>

@@ -622,6 +622,14 @@ button:hover {
   transition: 0.4s;
 }
 
+.pulse:hover, .pulse:focus{
+	box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+	animation: pulse 1s;
+}
+@keyframes pulse{
+	0%{box-shadow: 0 0 0 0 #BDAE82}
+}
+
 #contacts {
   display: flex;
   justify-content: end;

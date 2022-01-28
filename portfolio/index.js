@@ -1,5 +1,4 @@
 
-
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.nav');
 
@@ -10,8 +9,13 @@ function toggleMenu() {
 hamburger.addEventListener('click', toggleMenu);
 menu.addEventListener('click', toggleMenu);
 
-// (function(){
-//   $('.hamburger').on('click', function(){
-//     $('.nav').toggleClass('nav-active');
-//   });
-// });
+// change theme
+/////////////////////////////////////////
+
+const imgTheme = document.querySelector('.themes');
+const theme = document.querySelector('.day');
+function themesImg() {
+  theme.classList.toggle('night');
+}
+imgTheme.addEventListener('click', themesImg);
+

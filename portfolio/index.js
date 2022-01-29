@@ -1,3 +1,5 @@
+import i18Obj from './translate.js';
+
 
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.nav');
@@ -19,13 +21,6 @@ function themesImg() {
 }
 imgTheme.addEventListener('click', themesImg);
 
-// let themes = document.querySelector('.night');
-
-// function setLocalStorage() {
-//   localStorage.setItem('themes', themes);
-// }
-// window.addEventListener('beforeunload', setLocalStorage)
-
 // change photo in portfolio section
 /////////////////////////////////////////
 const portfolioBtns = document.querySelector('.portfolio-btn');
@@ -44,5 +39,4 @@ function changeImage(event) {
 portfolioBtns.addEventListener('click', changeImage); 
   
     
-  
 

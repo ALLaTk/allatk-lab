@@ -554,7 +554,7 @@ html.day.night .section-title-portfolio {
   max-height: 560px;
 }
 
-.btn-port.activ {
+.btn-port.active {
   height: 54px;
   width: 219px;
   font-family: Inter;
@@ -611,11 +611,9 @@ html.day.night .black:hover{
   color: #BDAE82;
 }
 
-.gallery{
-  display: none;
-}
 
-.gallery.activ {
+
+.gallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

@@ -19,3 +19,30 @@ function themesImg() {
 }
 imgTheme.addEventListener('click', themesImg);
 
+// let themes = document.querySelector('.night');
+
+// function setLocalStorage() {
+//   localStorage.setItem('themes', themes);
+// }
+// window.addEventListener('beforeunload', setLocalStorage)
+
+// change photo in portfolio section
+/////////////////////////////////////////
+const portfolioBtns = document.querySelector('.portfolio-btn');
+const portfolioBtn = document.querySelectorAll('.btn-port');
+const portfolioImages = document.querySelectorAll('.portfolio-image');
+
+function changeImage(event) {
+  if(event.target.classList.contains('btn-port')) {
+    const season = event.target.dataset.season
+    portfolioImages.forEach((img, index) => (img.src = `./assets/img/${season}/${index + 1}.jpg`)
+    );
+    portfolioBtn.forEach((btn) => btn.classList.remove('active')); 
+    event.target.classList.add('active');
+  }
+};
+portfolioBtns.addEventListener('click', changeImage); 
+  
+    
+  
+

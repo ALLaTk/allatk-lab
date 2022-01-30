@@ -91,6 +91,7 @@ const i18Obj = {
 }
 const lngEn = document.querySelector('.en');
 const lngRu = document.querySelector('.ru');
+
 const lngs = document.querySelector('.switch-lng')
 const language = document.querySelectorAll('.lng-text');
 
@@ -109,6 +110,7 @@ menu.addEventListener('click', toggleMenu);
 function themesImg() {
   theme.classList.toggle('night');
 }
+
 imgTheme.addEventListener('click', themesImg);
 
 // change photo in portfolio section
@@ -135,12 +137,13 @@ const lang = document.querySelectorAll('[data-i18]');
  
 };
 
-function add (elem) {
+function getActive (elem) {
   elem.target.classList.contains('lng-text')
-  language.forEach((btn) => btn.classList.remove('active')); 
+  language.forEach((item) => item.classList.remove('active')); 
   elem.target.classList.add('active');
 }
 
 lngEn.addEventListener('click', () => {getTranslate('en')});
 lngRu.addEventListener('click', () => {getTranslate('ru')});
-lngs.addEventListener('click', add); 
+lngs.addEventListener('click', getActive); 
+

@@ -86,11 +86,12 @@ html {
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  width: 469px;
+  width: 505px;
   margin: 0px;
   list-style: none;
   padding-left: 15px;
   padding-right: 16px;
+  color: white;
 }
 
 .nav-link-1,
@@ -98,21 +99,14 @@ html {
 .nav-link-3,
 .nav-link-4,
 .nav-link-5 {
-  padding: 0 15px;
+  padding: 0 20px;
   line-height: 50px;
   text-decoration: none;
   color: white;
   transition: 0.5s;
   line-height: 50px;
   cursor: pointer;
-}
-
-html.day.night .nav.open .nav-link-1,
-html.day.night .nav.open .nav-link-2,  
-html.day.night .nav.open .nav-link-3,
-html.day.night .nav.open .nav-link-4,
-html.day.night .nav.open .nav-link-5  {
- color: black;
+  color: white;
 }
 
 html.day.night .hamburger.open .line1,
@@ -124,6 +118,7 @@ html.day.night .hamburger.open .line3 {
 
 .nav-link-1 {
   width: 49px;
+  color: white;
 }
 
 
@@ -181,6 +176,7 @@ html.day.night .hamburger.open .line3 {
   font-weight: normal;
   font-size: 20px;
   line-height: 50px; 
+  color: white;
 }
 
 .switch-lng {
@@ -195,7 +191,7 @@ html.day.night .hamburger.open .line3 {
   text-align: center;
 }
 
-.lng-text-en {
+.lng-text.en {
   width: 25px;
   height: 50px;
   font-family: Inter;
@@ -204,6 +200,10 @@ html.day.night .hamburger.open .line3 {
   font-size: 20px;
   line-height: 50px;
   cursor: pointer;
+}
+
+.en.active {
+ color: #BDAE82;
 }
 
 .lng-text-slash {
@@ -216,7 +216,7 @@ html.day.night .hamburger.open .line3 {
   line-height: 50px;
 }
 
-.lng-text-ru {
+.lng-text.ru {
   width: 20px;
   height: 50px;
   font-family: Inter;
@@ -227,13 +227,17 @@ html.day.night .hamburger.open .line3 {
   cursor: pointer;
 }
 
-.lng-text-ru:hover{
+.ru.active {
+ color: #BDAE82;
+}
+
+.lng-text.ru:hover{
 filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
   transition: 0.4s;
 }
 
-.lng-text-en:hover {
+.lng-text.en:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
   transition: 0.4s;
@@ -353,8 +357,6 @@ html.day.night .dark {
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 0em;
-  padding-left: 69px;
-  padding-right: 70px;
   padding-top: 6px;
   padding-bottom: 7px;
   border-radius: 0px;
@@ -366,6 +368,7 @@ html.day.night .dark {
 
 #skills {
   max-width: 1440px;
+  color: white;
 }
 
 html.day.night #skills{
@@ -396,7 +399,7 @@ html.day.night #skills{
 .section-title-skills {
   position: absolute;
   z-index: 1;
-  width: 152px;
+  width: 190px;
   background: #000;
   height: 80px;
   font-family: Merriweather;
@@ -518,7 +521,7 @@ html.day.night #portfolio {
 .section-title-portfolio {
   position: absolute;
   z-index: 1;
-  width: 228px;
+  width: 250px;
   background: #000;
   height: 80px;
   font-family: Merriweather;
@@ -764,8 +767,6 @@ p {
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 0em;
-  padding-left: 37px;
-  padding-right: 37px;
   padding-top: 6px;
   padding-bottom: 9px;
   border-radius: 0px;
@@ -1076,6 +1077,15 @@ html.day.night .nav{
   padding-right: 0px;   
 }
 
+html.day.night .nav.open .nav-link-1,
+html.day.night .nav.open .nav-link-2,  
+html.day.night .nav.open .nav-link-3,
+html.day.night .nav.open .nav-link-4,
+html.day.night .nav.open .nav-link-5  {
+ color: black;
+}
+
+
 .nav-item {
   padding: 0px;
   font-family: Inter;
@@ -1105,7 +1115,7 @@ html.day.night .nav{
 }
 
 
-.lng-text-ru {
+.lng-text.ru {
   padding-right: 2px;
 }
 

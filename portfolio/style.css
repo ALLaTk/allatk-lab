@@ -123,7 +123,7 @@ html.day.night .hamburger.open .line3 {
 
 
 .nav-link-2 {
-  width: 95px;
+  width: 100px;
 }
 
 .nav-link-3 {
@@ -587,6 +587,12 @@ html.day.night .black{
   background-color: white;
   color: #000;
 }
+
+html.day.night .black.active{
+  background-color: #BDAE82;
+  color: #fff;
+}
+
 
 html.day.night .black:hover{
   background-color: #BDAE82;

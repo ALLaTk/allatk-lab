@@ -86,11 +86,11 @@ html {
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  width: 505px;
+  width: 550px;
   margin: 0px;
   list-style: none;
   padding-left: 15px;
-  padding-right: 16px;
+  padding-right: 33px;
   color: white;
 }
 
@@ -117,13 +117,13 @@ html.day.night .hamburger.open .line3 {
 
 
 .nav-link-1 {
-  width: 49px;
+  width: 65px;
   color: white;
 }
 
 
 .nav-link-2 {
-  width: 81px;
+  width: 95px;
 }
 
 .nav-link-3 {

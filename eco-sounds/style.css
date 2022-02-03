@@ -67,6 +67,7 @@ body {
 }
 
 .header__inner{
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
@@ -103,11 +104,39 @@ body {
 
 .menu__list-link{
   font-size: 20px;
-  line-height: 22px;
+  line-height: 2px;
   color: #fff;
 }
 
 .menu__list-link:hover {
   transition: 1s;
   color: #BDAE82;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(assets/img/forest.jpg);
+  background-size: cover;
+}
+
+.player {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.player:hover {
+   filter: invert(26%) sepia(15%) saturate(638%)  hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  transition: 0.4s;
+}
+
+.player__img{
+  width: 150px;
+  height: 150px;
 }

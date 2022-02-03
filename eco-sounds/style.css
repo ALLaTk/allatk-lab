@@ -44,6 +44,12 @@ img {
 
 a{
   text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover{
+  transition: 1s;
+  color: #BDAE82;
 }
 
 input,
@@ -58,6 +64,7 @@ body {
   background: #000;
   color: #fff;
   font-family: 'Roboto', sans-serif;
+  
 }
 
 .container{
@@ -68,8 +75,8 @@ body {
 
 .header__inner{
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,7 +125,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 120px);
   background: url(assets/img/forest.jpg);
   background-size: cover;
 }
@@ -131,12 +138,58 @@ body {
 }
 
 .player:hover {
-   filter: invert(26%) sepia(15%) saturate(638%)  hue-rotate(7deg) brightness(92%)
+   filter: invert(42%) sepia(15%) saturate(638%)  hue-rotate(7deg) brightness(82%)
     contrast(87%);
-  transition: 0.4s;
+  transition: 1s;
 }
 
 .player__img{
   width: 150px;
   height: 150px;
+}
+
+.footer__inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.copirite{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 182px;
+}
+
+.fot {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+
+.fot-link {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-rs{
+ width: 130px;
+ height: 50px;
+}
+
+.shcool:hover {
+  filter: invert(26%) sepia(15%) saturate(638%)  hue-rotate(7deg) brightness(92%)
+    contrast(87%);
 }

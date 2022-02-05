@@ -42,10 +42,10 @@ img {
   display: block;
 }
 
-a{
-  text-decoration: none;
-  cursor: pointer;
-}
+
+
+  
+
 
 a:hover{
   transition: 1s;
@@ -109,18 +109,15 @@ body {
   display: flex;
 }
 
-.menu__list-item + .menu__list-item{
-  margin-left: 40px;
-  cursor: pointer;
-}
-
-.menu__list-link{
+.menu__list-item{
   font-size: 20px;
   line-height: 2px;
   color: #fff;
+  cursor: pointer;
+  padding-left: 40px;
 }
 
-.menu__list-link:hover {
+.menu__list-item:hover {
   transition: 1s;
   color: #BDAE82;
 }

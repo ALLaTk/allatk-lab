@@ -37,6 +37,8 @@ function changeImage(event) {
     menuItem.forEach((btn) => btn.classList.remove('active')); 
     event.target.classList.add('active');
     logo.src = `./assets/svg/logo1.svg`;
+    playerBtn.classList.remove('active');
+    plauseBtn.classList.add('active');
 }
 menuItems.addEventListener('click', changeImage); 
 
@@ -50,6 +52,8 @@ function toggleMenu() {
   logo.src = `./assets/svg/logo.svg`;
   menuImages.style.backgroundImage = `url('./assets/img/forest.jpg')`;
   menuItems.classList.toggle('active');
+  playerBtn.classList.remove('active');
+  plauseBtn.classList.add('active');
 }
 
 logo.addEventListener('click', toggleMenu);

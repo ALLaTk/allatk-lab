@@ -1,0 +1,221 @@
+html{
+  box-sizing: border-box;   
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover{
+  transition: 1s;
+  color: #BDAE82;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.container{
+  max-width: 1400px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.header__inner{
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo__img{
+  width: 50px;
+  height: 50px;
+}
+
+.logo__img:hover {
+  filter: invert(26%) sepia(15%) saturate(638%)  hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  transition: 1s;
+}
+
+
+.logo__img.active{
+ filter: invert(26%) sepia(15%) saturate(638%)  hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+
+.logo__img.active:hover{
+  filter: none;
+}
+
+
+.menu__list {
+  display: flex;
+}
+
+.menu__list-item + .menu__list-item{
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.menu__list-link{
+  font-size: 20px;
+  line-height: 2px;
+  color: #fff;
+}
+
+.menu__list-link:hover {
+  transition: 1s;
+  color: #BDAE82;
+}
+
+.link.active {
+  color: #BDAE82;
+}
+
+
+.main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 120px);
+  background-image: url(./assets/img/forest.jpg);
+  background-size: cover;
+  transition: background-image 1s ease-in-out;
+}
+
+.player {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.player:hover {
+   filter: invert(42%) sepia(15%) saturate(638%)  hue-rotate(7deg) brightness(82%)
+    contrast(87%);
+  transition: 1s;
+}
+
+.player__img {
+  display: none;
+}
+
+.pause__img {
+  display: none;
+}
+
+.player__img.active{
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+
+.pause__img.active{
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+
+.footer__inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.copirite{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 182px;
+}
+
+.fot {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+
+.fot-link {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-rs{
+ width: 130px;
+ height: 50px;
+}
+
+.shcool:hover {
+  filter: invert(26%) sepia(15%) saturate(638%)  hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}

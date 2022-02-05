@@ -10,7 +10,7 @@ const audio = new Audio();
 let isPlay = false;
 let playNum = 0;
 
-audio.src = './assets/audio/solovey.mp3';
+audio.src = './assets/audio/forest.mp3';
 audio.currentTime = 0;
 
 function playAudio() {
@@ -63,7 +63,6 @@ function playerBtns () {
   playerBtn.classList.toggle('active');
   plauseBtn.classList.toggle('active');
   audio.currentTime = 0;
-  audio.src = `./assets/audio/forest.mp3`;
 }
 playerBtn.addEventListener('click', playerBtns);
 plauseBtn.addEventListener('click', playerBtns);

@@ -110,7 +110,7 @@ body {
 }
 
 .menu__list-item + .menu__list-item{
-  margin-left: 30px;
+  margin-left: 40px;
   cursor: pointer;
 }
 

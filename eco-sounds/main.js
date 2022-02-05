@@ -43,17 +43,17 @@ function changeImage(event) {
 menuItems.addEventListener('click', changeImage); 
 
 function toggleMenu() {
-  logo.classList.toggle('active');
     audio.src = `./assets/audio/forest.mp3`;
     audio.currentTime = 0;
     audio.play();
     isPlay = true;
+    logo.src = `./assets/svg/logo.svg`;
+    menuImages.style.backgroundImage = `url('./assets/img/forest.jpg')`;
 
-  logo.src = `./assets/svg/logo.svg`;
-  menuImages.style.backgroundImage = `url('./assets/img/forest.jpg')`;
-  menuItems.classList.toggle('active');
-  playerBtn.classList.remove('active');
-  plauseBtn.classList.add('active');
+    menuItem.forEach((btn) => btn.classList.remove('active'));
+    logo.classList.add('active');
+    playerBtn.classList.remove('active');
+    plauseBtn.classList.add('active');
 }
 
 logo.addEventListener('click', toggleMenu);

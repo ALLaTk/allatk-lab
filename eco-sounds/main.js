@@ -63,6 +63,7 @@ function playerBtns () {
   playerBtn.classList.toggle('active');
   plauseBtn.classList.toggle('active');
   audio.currentTime = 0;
+  audio.src = `./assets/audio/forest.mp3`;
 }
 playerBtn.addEventListener('click', playerBtns);
 plauseBtn.addEventListener('click', playerBtns);

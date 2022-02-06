@@ -13,14 +13,14 @@ let playNum = 0;
 audio.src = './assets/audio/forest.mp3';
 audio.currentTime = 0;
 
-function preloadSummerImages() {
-  
-  for(let i = 1; i <= 6; i++) {
+function preloadImages() {
+  const bird = ['drozd', 'forest', 'javoronok', 'slavka', 'solovey', 'zarynka'];
+  bird.forEach(function(item) {
     const img = new Image();
-    img.src = `./assets/img/forest.jpg`;
-  }
+    img.src = `./assets/img/${item}.jpg`;
+  });
 }
-preloadSummerImages();
+preloadImages(); 
 
 function playAudio() {
  if(isPlay){

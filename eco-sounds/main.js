@@ -14,9 +14,10 @@ audio.src = './assets/audio/forest.mp3';
 audio.currentTime = 0;
 
 function preloadSummerImages() {
+  
   for(let i = 1; i <= 6; i++) {
     const img = new Image();
-    img.src = `./assets/img/${i}.jpg`;
+    img.src = `./assets/img/forest.jpg`;
   }
 }
 preloadSummerImages();

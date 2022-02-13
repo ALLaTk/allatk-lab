@@ -1,0 +1,280 @@
+html{
+  box-sizing: border-box;   
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+a{
+  text-decoration: none;
+}
+  
+
+
+a:hover{
+  transition: 1s;
+  color: #BDAE82;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.body {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+.container{
+  max-width: 1400px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+
+main {
+  
+  height: calc(100vh - 170px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main{
+  
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  max-width: 100%;
+  display: flex;
+  text-align: end;
+  align-self: flex-end;
+  align-items: center;
+  margin-left: auto;
+}
+
+.switch-lng {
+  max-width: 100%;
+  display: flex;
+  height: 51px;
+  width: 70px;
+  border: 0;
+  margin-top: 40px;
+  margin-right: 80px;
+  margin-left: auto;
+  align-items: center;
+  align-self: flex-end;
+  align-content: flex-end;
+}
+
+.lng-text.en {
+  display: none;
+  width: 25px;
+  height: 70px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.en.active {
+  display: block;
+
+}
+
+
+.lng-text.ru {
+  display: none;
+  width: 20px;
+  height: 70px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.ru.active {
+  display: block;
+}
+
+.lng-text.ru:hover{
+filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  transition: 0.4s;
+}
+
+.lng-text.en:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  transition: 0.4s;
+}
+
+.lng-text{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.quotes{
+  display: flex;
+  flex-direction: column;
+}
+
+#quote{
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 2rem;
+  text-align: justify;
+  font-style: italic;
+  font-family: 'Architects Daughter', cursive;
+  letter-spacing: 2px;
+}
+
+#author{
+  align-self: flex-end;
+  margin-right: 20px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-size: 15px;
+}
+
+
+.button{
+  margin-top: 3rem;
+  width: fit-content;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  background: transparent;
+  color: white;
+  border-color: #BDAE82;
+  border-width: 3px;
+  border-radius: 4px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.eng {
+  display: none;
+}
+.eng.active {
+  display: block;
+}
+
+.rus {
+  display: none;
+}
+.rus.active {
+  display: block;
+}
+
+.footer__inner {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.copirite{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 182px;
+}
+
+.fot {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+
+.fot-link {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-rs{
+ width: 110px;
+ height: 35px;
+}
+
+.shcool:hover {
+  filter: invert(26%) sepia(15%) saturate(638%)  hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}

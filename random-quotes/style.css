@@ -92,7 +92,7 @@ main {
 .main{
   
   width: 90%;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
   border-radius: 8px;
   padding-right: 3rem;
@@ -185,13 +185,13 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
 }
 
 #quote{
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 700;
   line-height: 2rem;
   text-align: justify;
   font-style: italic;
   font-family: 'Architects Daughter', cursive;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 #author{

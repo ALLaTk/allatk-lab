@@ -22,7 +22,7 @@ let i = 0
 function preloadImages() {
   imgBg.forEach(function(i) {
     const img = new Image();
-    img.style = `background-image: url(./assets/img/${imgBg[i]})`;
+    img.src = `./assets/img/${i}`;
   });
 }
 preloadImages();

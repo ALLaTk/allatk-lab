@@ -8,23 +8,25 @@
   <title>Tic Tac Toe</title>
 </head>
 <body>
+  <main>
   <h1>Tic Tac Toe</h1>
   <div class="board">
-    <div class="square" data-index="1">1</div>
-    <div class="square" data-index="2">2</div>
-    <div class="square" data-index="3">3</div>
-    <div class="square" data-index="4">4</div>
-    <div class="square" data-index="5">5</div>
-    <div class="square" data-index="6">6</div>
-    <div class="square" data-index="7">7</div>
-    <div class="square" data-index="8">8</div>
-    <div class="square" data-index="9">9</div>
+    <div class="square right-border bottom-border" data-index="1"></div>
+    <div class="square right-border bottom-border" data-index="2"></div>
+    <div class="square bottom-border" data-index="3"></div>
+    <div class="square right-border bottom-border" data-index="4"></div>
+    <div class="square right-border bottom-border" data-index="5"></div>
+    <div class="square bottom-border" data-index="6"></div>
+    <div class="square right-border" data-index="7"></div>
+    <div class="square right-border" data-index="8"></div>
+    <div class="square " data-index="9"></div>
     <div class="line"></div>
-    <div class="game__over">
-      <h2 class="game__over__text">You Are Winner</h2>
+    <div class="game__over hidden">
+      <h2 class="game__over__text">You Are Winner!</h2>
       <button id="play__again">Play Again</button>
     </div>
   </div>
+  </main>
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">

@@ -85,4 +85,13 @@ function showGameOver(elem) {
   draw.play();
 }
 
+function startGame() {
+  line.className = "line";
+  gameOverArea.classList.remove('visible');
+  array.fill(null);
+  squares.forEach((elem) => (elem.innerText = ''));
+  player = playerX;
+  click.play();
+}
 
+playBtn.addEventListener('click', startGame);

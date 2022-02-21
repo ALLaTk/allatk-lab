@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="./assets/fav.ico">
+  <link rel="stylesheet" href="style.css">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+  <main>
+  <div class="board">
+    <div class="square right-border bottom-border" data-index="1"></div>
+    <div class="square right-border bottom-border" data-index="2"></div>
+    <div class="square bottom-border" data-index="3"></div>
+    <div class="square right-border bottom-border" data-index="4"></div>
+    <div class="square right-border bottom-border" data-index="5"></div>
+    <div class="square bottom-border" data-index="6"></div>
+    <div class="square right-border" data-index="7"></div>
+    <div class="square right-border" data-index="8"></div>
+    <div class="square " data-index="9"></div>
+    <div class="line"></div>
+    <div class="game__over hidden">
+      <h2 class="game__over__text"></h2>
+      <button class="play__again">Play Again</button>
+    </div>
+  </div>
+  <div class="stat">
+      <table>
+        <th colspan="2">Statistics</th>
+        <tr>
+          <td>X</td>
+          <td><span id="sX"></span></td>
+        </tr>
+        <tr>
+          <td>O</td>
+          <td><span id="sO"></span></td>
+        </tr>
+        <tr>
+          <td>Draw</td>
+          <td><span id="sD"></span></td>
+        </tr>
+      </table>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="copirite">
+          <span class="fot">©</span>
+          <span class="fot">2022</span>
+          <span class="fot"><a class="fot-link" href="https://github.com/ALLaTk" target="_blank">github</a></span>
+        </div>
+        <div class="shcool">
+          <a href="https://rs.school/js-stage0/" target="_blank">
+          <img class= "footer-rs" src="./assets/svg/rss.svg" alt="rs school">
+          </a>
+        <div>
+      <div>
+    </div>
+  </footer>  
+  <script src="main.js"></script>
+</body>
+</html>

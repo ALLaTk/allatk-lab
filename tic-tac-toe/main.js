@@ -50,3 +50,39 @@ function showPlayer(event) {
 
 board.addEventListener('click', showPlayer)
 
+function showWinner() {
+  for (let i of index) {
+    const { win, addClass } = i;
+    const value1 = array[win[0] - 1];
+    const value2 = array[win[1] - 1];
+    const value3 = array[win[2] - 1];
+
+    if (
+      value1 != null &&
+      value1 === value2 &&
+      value1 === value3
+    ) {
+      line.classList.add(addClass);
+      showGameOver(value1);
+      return;
+    }
+  }
+  const result = array.every((elem) => elem !== null);
+  if (result) {
+    showGameOver(null);
+  }
+}
+
+function showGameOver(elem) {
+  let text = "Draw!";
+  gameOverText.style.color = '#f43549'
+  if (elem != null) {
+    text = `Winner is ${elem}!`;
+    gameOverText.style.color = 'rgb(65 90 255)'
+  }
+  gameOverArea.classList.add('visible');
+  gameOverText.innerText = text;
+  draw.play();
+}
+
+

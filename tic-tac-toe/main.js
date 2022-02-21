@@ -24,7 +24,7 @@ const index = [
 const gameOver = new Audio('./assets/sound/gameover.mp3');
 const click = new Audio('./assets/sound/click.mp3');
 let draw = new Audio('./assets/sound/draw.mp3');
-
+let clicks = 0;
 function showPlayer(event) {
   if (gameOverArea.classList.contains("visible")) {
     return;
@@ -32,12 +32,12 @@ function showPlayer(event) {
    if (event.target.innerText != '') {
     return;
   }
-
   const tileNumber = event.target.dataset.index;
   if (player === playerX) {
     event.target.innerText = playerX;
     array[tileNumber - 1] = playerX;
-    player = playerO;
+    player = playerO;  
+    clicks++;
   } else {
     event.target.innerText = playerO;
     array[tileNumber - 1] = playerO;
@@ -71,13 +71,17 @@ function showWinner() {
   if (result) {
     showGameOver(null);
   }
+   
+ 
 }
+
+
 
 function showGameOver(elem) {
   let text = "Draw!";
   gameOverText.style.color = '#f43549'
   if (elem != null) {
-    text = `Winner is ${elem}!`;
+    text = `Winner is ${elem}: ${clicks} moves!`;
     gameOverText.style.color = 'rgb(65 90 255)'
   }
   gameOverArea.classList.add('visible');
@@ -87,6 +91,7 @@ function showGameOver(elem) {
 
 function startGame() {
   line.className = "line";
+  clicks = 0;
   gameOverArea.classList.remove('visible');
   array.fill(null);
   squares.forEach((elem) => (elem.innerText = ''));

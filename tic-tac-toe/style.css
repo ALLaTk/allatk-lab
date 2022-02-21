@@ -37,9 +37,10 @@ body {
 
 main {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  
+  justify-content: center;
+  align-items: flex-start;
+ 
 }
 
 .board {
@@ -47,6 +48,7 @@ main {
   grid-template-columns: 100px 100px 100px;
   grid-template-rows: 100px 100px 100px;
   position: relative;
+  margin-left: 230px;
 }
 
 .square {
@@ -117,8 +119,8 @@ main {
 .line-diagonal-2 {
   width: 90%;
   height: 5px;
-  top: 140px;
-  left: 17px;
+  top: 146px;
+  left: 11px;
   transform: skewY(-45deg);
 }
 
@@ -167,8 +169,29 @@ button {
 }
 
 h1{
-  padding-bottom: 30px;
+  text-align: center;
+  
 }
+
+.stat{
+  display: flex;
+  margin-left: 100px;
+  align-items: flex-start;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.stat table, .stat th, .stat td {
+  border: 2px solid #f6f6c9;
+  padding: 5px;
+  text-align: center;
+  width: 130px;
+}
+
+.stat table{
+  border-collapse: collapse;
+}
+
 
 .footer__inner {
   margin: 0 40px;

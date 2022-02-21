@@ -19,7 +19,11 @@ const index = [
   { win: [1, 5, 9], addClass: "line-diagonal-1" },
   { win: [3, 5, 7], addClass: "line-diagonal-2" },
 ]
-
+ let stat = {
+   'X': 0,
+   'O': 0,
+   'd': 0,
+ }
 
 const gameOver = new Audio('./assets/sound/gameover.mp3');
 const click = new Audio('./assets/sound/click.mp3');
@@ -71,23 +75,35 @@ function showWinner() {
   if (result) {
     showGameOver(null);
   }
-   
- 
 }
 
 
 
 function showGameOver(elem) {
-  let text = "Draw!";
+ if (elem == null) {
+  text = "Draw!";
   gameOverText.style.color = '#f43549'
-  if (elem != null) {
+  stat.d +=1;
+  
+
+ } else if (elem != null) {
     text = `Winner is ${elem}: ${clicks} moves!`;
     gameOverText.style.color = 'rgb(65 90 255)'
-  }
+    stat[elem] += 1;
+    
+    
+  } 
+  
   gameOverArea.classList.add('visible');
   gameOverText.innerText = text;
-  draw.play();
+  draw.play(); 
 }
+
+// function setLocalStorage() {
+//  localStorage.getItem('a', a); 
+//  showGameOver()
+// }
+// window.addEventListener('load', setLocalStorage)
 
 function startGame() {
   line.className = "line";
@@ -97,6 +113,15 @@ function startGame() {
   squares.forEach((elem) => (elem.innerText = ''));
   player = playerX;
   click.play();
+  updateStat()
+ 
+}
+playBtn.addEventListener('click', startGame);
+
+function updateStat() {
+    document.getElementById('sX').innerHTML = stat.X;
+    document.getElementById('sO').innerHTML = stat.O;
+    document.getElementById('sD').innerHTML = stat.d;
 }
 
-playBtn.addEventListener('click', startGame);
+
